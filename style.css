@@ -1,0 +1,89 @@
+.logo{
+    position:relative;
+    width:430px;
+    height:300px;
+    animation:logoFloat 4s ease-in-out infinite;
+}
+
+.a{
+    position:absolute;
+    left:70px;
+    top:10px;
+    font-size:255px;
+    line-height:1;
+    font-weight:900;
+    color:#f4f5fa;
+    text-shadow:
+        0 3px 0 #858999,
+        0 8px 20px rgba(0,0,0,.9);
+}
+
+.x{
+    position:absolute;
+    left:158px;
+    top:28px;
+    font-size:245px;
+    line-height:1;
+    font-weight:900;
+
+    background:linear-gradient(
+        90deg,
+        #00eaff,
+        #268cff,
+        #694cff,
+        #a83cff,
+        #ff20c9,
+        #00eaff
+    );
+
+    background-size:400% 100%;
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    filter:
+        drop-shadow(0 0 8px #00eaff)
+        drop-shadow(0 0 20px #704cff)
+        drop-shadow(0 0 30px rgba(255,20,200,.7));
+
+    z-index:3;
+
+    animation:colorMove 3s linear infinite;
+}
+
+.arrow{
+    position:absolute;
+    right:-5px;
+    top:-42px;
+    font-size:175px;
+    font-weight:900;
+
+    background:linear-gradient(
+        90deg,
+        #00eaff,
+        #268cff,
+        #694cff,
+        #a83cff,
+        #ff20c9,
+        #00eaff
+    );
+
+    background-size:400% 100%;
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    transform:rotate(-8deg);
+
+    z-index:5;
+
+    filter:
+        drop-shadow(0 0 8px #00eaff)
+        drop-shadow(0 0 20px #704cff);
+
+    animation:
+        colorMove 3s linear infinite,
+        arrowPulse 2.5s ease-in-out infinite;
+}
